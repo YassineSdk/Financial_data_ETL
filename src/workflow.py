@@ -91,11 +91,6 @@ def data_pipeline():
         raise
 
 
-if __name__ == "__main__":
-    data_pipeline.deploy(
-        name="housing_etl_pipeline",
-        work_pool_name="housing_pipeline",
-        image="your-dockerhub-username/my-flow:latest"
-    )
+data_pipeline()
 
 
